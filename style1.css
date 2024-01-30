@@ -1,0 +1,155 @@
+/* Define the colors as CSS variables */
+:root {
+    --orange: #D1884F;
+    --dark-blue: #008AAA;
+    --light-blue: #3BBADB;
+}
+
+/* Use the Poppins font for the whole website */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style the header and navigation bar */
+header {
+    background-color: white;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 20px; 
+}
+i{
+    margin-right: 8px;
+}
+
+ul li a:hover{
+    color:var(--orange);
+}
+
+/* Style the home section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.intro {
+    width: 50%;
+}
+
+.intro h1 {
+    color: var(--light-blue);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    color: var(--dark-blue);
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.intro h2 span {
+    color: #D1884F;
+}
+
+
+.intro p {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.intro p span {
+    color: var(--dark-blue);
+}
+
+
+.intro .btn-box {
+    display:flex ;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.btn-box a{
+    display:inline-flex ;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--light-blue);
+    border: 2px solid var(--light-blue);
+    border-radius: 8px;
+    font-size: 17px;
+    color:white ;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: var(--light-blue);
+}
+
+
+.image {
+    width: 30%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: white;
+    height: 40px;
+}
+
+footer p {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    margin: 0;
+}
+
